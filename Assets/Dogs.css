@@ -1,0 +1,279 @@
+.body {
+background-color: rgb(19, 99, 19);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container 
+{   display: grid;
+    grid-template-rows: 80px 3fr 20fr 3fr 6fr 3fr fit-content(110px) 7fr;
+    grid-template-columns: 3fr 400px 1fr 400px 3fr;
+    margin: 80px 80px;
+    background-color: #1aaf7e;
+    border-radius: 25px;
+    
+}
+.header 
+{
+    grid-row: 1 / 2;
+    grid-column: 1 / span 5;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    }
+.logo {    
+    margin-left: 280px;
+    margin-top: 12px;
+    }    
+.trainr {
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.signin
+{   margin-left: 33%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.login  {
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+.download {
+    margin-left: 20px;
+    background-color: rgb(19, 99, 19);
+    width: 163px;
+    height: 47px;
+    border-radius: 5px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+.download:hover {
+    background-color: #1aaf7e;
+    color: black;    
+    }
+.section1 {
+    grid-area: 3 / 2 / 4 / 3;
+    }
+.pes1, .pes2
+    { width: 100%;
+    max-width: 100%;}        
+.simple {
+    color: white;
+    font-size: 48px;
+    font-weight: lighter;
+}
+.skills {
+    color: white;
+    font-size: 24px;
+    font-weight: light;
+}
+.bigdownload {
+    background-color: rgb(255, 255, 255);
+    width: 399px;
+    height: 71px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigdownload:hover {
+    background-color: rgb(19, 99, 19);
+    color: rgb(252, 252, 252);   
+}       
+#psyk {
+    margin-right: 15px;
+    }        
+.section2 {
+    grid-area: 3 / 4 / 4 / 5;
+    
+}
+.section3 {
+    grid-area: 5 / 2 / 6 / 5;
+    background-color: rgb(19, 99, 19);
+    border-radius: 20px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.free {
+    padding-left: 30px;
+    color: white;
+    }
+.claim {
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 47px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-weight: medium;
+    font-size: 16px; 
+    margin-right: 30px;
+}
+.claim:hover {
+    background-color: #1aaf7e;
+    color: rgb(252, 252, 252);    
+
+
+}
+.section4 {
+    grid-area: 7 / 2 / 8 / 3;
+}
+.section5 {
+    grid-area: 7 / 4 / 8 / 5;
+    
+}
+.footer {
+    grid-area: 8 / 1 / 9 / span 5;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.logosmall {    
+    margin-left: 140px;
+    }   
+.trainr2        
+    {margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: medium;
+    font-size: 16px;        
+}  
+.signin2, .login2, .support 
+    {color: rgb(0, 0, 0);
+    font-weight: regular;
+    font-size: 16px;   
+}    
+.signin2    {
+    margin-left: 40%;
+    margin-right: 4%;
+}   
+.login2 {
+    margin-right: 4%;
+}
+#blob1 {
+    position: absolute;
+    left: 34px;
+    top: 14px;
+    z-index: 1;
+}
+#blob2 {
+    position: absolute;
+    left: 821px;
+    top: 19px;
+    z-index: 1;
+}
+#blob3 {
+    position: absolute;
+    left: 784px;
+    top: 583px;
+    z-index: 1;
+}
+@media (min-width: 1735px), (max-width: 1196px) {
+    #blob1, #blob2, #blob3 {display: none; }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 750px) 
+{
+    .container 
+    {display: grid;
+    grid-template-rows: 80px 3fr 20fr 3fr 6fr 3fr fit-content(110px) 7fr;
+    grid-template-columns: 1fr 45% 1fr 45% 1fr;
+    margin: 30px 30px;
+    }
+    .logo {    
+        margin-left: 20px;
+        }    
+    .signin
+    {   margin-left: 32%;
+    }
+    .bigdownload {
+        width: 40vw;
+        height: 71px;
+        }
+    .logosmall {    
+            margin-left: 5%;
+            }   
+}
+
+@media screen and (max-width: 749px)
+{   .container 
+    {display: grid;
+    grid-template-rows: 60px 20fr 20fr 10fr 7fr 7fr;
+    grid-template-columns: 5% 90% 5%;
+    margin: 10px 10px;
+    }
+    .header 
+    {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    }
+    .logo {    
+        margin-left: 15px;
+        }    
+    .signin
+    {   margin-left: 8%;
+        font-size: 0.6em;
+    }
+    
+    .login  {
+        margin-left: 12px;
+        font-size: 0.6em;
+        }
+    .download {
+        margin-right: 15px;
+        width: 25%;
+        height: 40px;
+        font-size: 0.8em;}
+    .simple {
+        font-weight: normal;
+        }
+    .skills {
+        color: white;
+        font-size: 1.6em;
+        font-weight: lighter;}
+    .bigdownload {
+        width: 100%;
+        height: 50px;
+        font-weight: bold;
+        font-size: 1.1em; 
+        }        
+        
+    .section1 {
+            grid-area: 2 / 2 / 3 / 3;
+            }
+    .section2 {
+            grid-area: 3 / 2 / 4 / 3;
+            margin-top: 12px;
+            }
+    .section3 {
+            grid-area: 4 / 2 / 5 / 3;
+            margin-top: 12px;
+            }
+    .section4 {
+            grid-area: 5 / 2 / 6 / 3;
+            margin-top: 12px;
+            }
+    .section5 {
+            grid-area: 6 / 2 / 7 / 3;  
+            margin-top: 12px; 
+            }
+    .footer { display: none}
+}
